@@ -1,4 +1,23 @@
 weenote
 =======
 
-A quick, dirty, and tiny (~500 byte) tool for creating "takahashi method" html presentations
+A quick/dirty/tiny tool for creating simple [Takahashi](http://en.wikipedia.org/wiki/Takahashi_method)-style html presentations.
+
+What it does
+------------
+
+weenote is ~60 lines of JavaScript that turns an HTML document into a slideshow. It turns every child node in the document's `BODY` into a slide, automatically zoomed to fit the window. It also binds the left and right arrow keys for navigation.
+
+How to use
+----------
+
+1. Create an HTML document.
+2. Hotlink [weenote.js](https://github.com/jed/weenote/blob/master/weenote.js) in the `HEAD`.
+3. Add all slides as child elements of the `BODY`.
+4. Load in browser.
+5. Present! (Use the left/right arrow keys to move to the previous/next slide.)
+
+License
+-------
+
+MIT
