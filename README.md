@@ -3,6 +3,8 @@ weenote
 
 A quick/dirty/tiny tool for creating simple [Takahashi](http://en.wikipedia.org/wiki/Takahashi_method)-style presentations. It was inspired by [tmcw](https://github.com/tmcw)'s [big](https://github.com/tmcw/big).
 
+Check out [the demo](http://jed.github.com/weenote) if you'd like.
+
 What it is
 ----------
 
