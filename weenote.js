@@ -57,7 +57,10 @@ setTimeout(function init() {
   }
 
   document.ontouchstart = function(e) {
-    var i = !e.target.href && slide + 1
+    if (e.target.href) return
+
+    var i = slide + (e.touches[0].pageX > innerWidth / 2 ? 1 : -1)
+
     if (i in slides) location.hash = i
   }
 }, 50)
