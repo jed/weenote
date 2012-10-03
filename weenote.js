@@ -55,4 +55,8 @@ setTimeout(function init() {
     var i = slide + {39: 1, 37: -1}[e.which]
     if (i in slides) location.hash = i
   }
+
+  document.onclick = function() {
+    if (slide + 1 in slides) location.hash = slide + 1
+  }
 }, 50)
