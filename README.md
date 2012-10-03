@@ -8,7 +8,7 @@ Check out [the demo](http://jed.github.com/weenote) if you'd like.
 What it is
 ----------
 
-weenote is ~60 lines of JavaScript that turns an HTML document into a slideshow. It turns every child node in the document's `BODY` into a slide, automatically zoomed to fit the window. It also binds the left and right arrow keys for navigation.
+weenote is ~60 lines of JavaScript that turns an HTML document into a slideshow. It turns every child node in the document's `BODY` into a slide, automatically zoomed to fit the window. It also binds taps and arrow keys for navigation.
 
 How to use
 ----------
@@ -19,8 +19,8 @@ How to use
 4. Load it in your browser.
 5. Present!
 
-Tap or press the right arrow for the next slide.
-Press the left arrow for the previous slide.
+To show the next slide: tap the right half of the page or press the right arrow.
+To show the previous slide: tap the left half of the page or press the left arrow.
 
 License
 -------
