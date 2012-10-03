@@ -35,7 +35,7 @@ setTimeout(function init() {
     body.removeChild(el)
   }
 
-  body.appendChild(document.createComment())
+  body.appendChild(document.createComment(""))
 
   !function sync() {
     setTimeout(sync, 50)
