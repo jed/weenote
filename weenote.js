@@ -56,7 +56,8 @@ setTimeout(function init() {
     if (i in slides) location.hash = i
   }
 
-  document.onclick = function() {
-    if (slide + 1 in slides) location.hash = slide + 1
+  document.ontouchstart = function() {
+    var i = slide + 1
+    if (i in slides) location.hash = i
   }
 }, 50)
