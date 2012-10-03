@@ -19,7 +19,8 @@ How to use
 4. Load it in your browser.
 5. Present!
 
-(Use the left/right arrow keys to move to the previous/next slide.)
+Tap or press the right arrow for the next slide.
+Press the left arrow for the previous slide.
 
 License
 -------
