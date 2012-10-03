@@ -53,6 +53,7 @@ setTimeout(function init() {
 
   document.onkeydown = function(e) {
     var i = slide + {39: 1, 37: -1}[e.which]
+
     if (i in slides) location.hash = i
   }
 
