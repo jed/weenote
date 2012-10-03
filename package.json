@@ -1,0 +1,11 @@
+{
+  "name": "weenote",
+  "version": "0.1.0",
+  "description": "A quick/dirty/tiny tool for creating simple Takahashi-style html presentations",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jed/weenote.git"
+  },
+  "author": "Jed Schmidt <tr@nslator.jp>",
+  "license": "BSD"
+}

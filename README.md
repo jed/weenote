@@ -20,4 +20,4 @@ How to use
 License
 -------
 
-MIT
+BSD
