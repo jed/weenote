@@ -1,8 +1,5 @@
-setTimeout(function init() {
+onload = function() {
   var body = document.body
-
-  if (!body) return setTimeout(init, 50)
-
   var slides = {}
   var slide
 
@@ -64,4 +61,4 @@ setTimeout(function init() {
 
     if (i in slides) location.hash = i
   }
-}, 50)
+}
