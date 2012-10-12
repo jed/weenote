@@ -19,7 +19,7 @@ onload = function() {
 
       if (top > 0 && left > 0) break
 
-      style.fontSize = (i -= 10) + "px"
+      style.fontSize = (i -= i * 0.05) + "px"
     }
 
     style.display = "block"
