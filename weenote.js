@@ -34,19 +34,20 @@ onload = function() {
 
   body.appendChild(document.createComment(""))
 
-  !function sync() {
-    setTimeout(sync, 50)
+  function sync() {
 
     var next = 0 | location.hash.match(/\d+/)
-
-    if (slide == next) return
 
     next = Math.max(Math.min(count, next), 1)
     next = slides[location.hash = slide = next]
 
     body.replaceChild(next, body.firstChild)
     fit(next)
-  }()
+  }
+
+  sync()
+
+  window.addEventListener('hashchange', sync)
 
   document.onkeydown = function(e) {
     var i = slide + {39: 1, 37: -1}[e.which]
