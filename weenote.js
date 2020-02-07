@@ -48,8 +48,15 @@ onload = function() {
     fit(next)
   }()
 
+  const FORWARD = 1
+  const BACKWARD = -1
+  const keyToSlideDirection = {
+    "ArrowRight": FORWARD, "ArrowLeft": BACKWARD,
+    "PageDown": FORWARD, "PageUp": BACKWARD
+  }
+
   document.onkeydown = function(e) {
-    var i = slide + {"ArrowRight": 1, "ArrowLeft": -1}[e.key]
+    var i = slide + keyToSlideDirection[e.key]
 
     if (i in slides) location.hash = i
   }
