@@ -49,7 +49,7 @@ onload = function() {
   }()
 
   document.onkeydown = function(e) {
-    var i = slide + {39: 1, 37: -1}[e.which]
+    var i = slide + {"ArrowRight": 1, "ArrowLeft": -1}[e.key]
 
     if (i in slides) location.hash = i
   }
