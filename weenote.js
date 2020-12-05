@@ -5,26 +5,34 @@ onload = function() {
 
   function fit(el) {
     var style = el.style
-    var i = 1000
-    var top
-    var left
-
-    style.display  = "inline"
-    style.fontSize = i + "px"
+    var font = 200
+    var margin = 15;
+    var width, height;
+    var scalex, scaley, scale;
+    
+    style.fontSize = font + "px"
     style.position = "absolute"
+    style.display = "block"
+    width = innerWidth - 2*margin;
+    height = innerHeight - 2*margin;
+    style.margin = margin + "px";
 
-    while (1) {
-      left = innerWidth - el.offsetWidth
-      top  = innerHeight - el.offsetHeight
-
-      if (top > 0 && left > 0) break
-
-      style.fontSize = (i -= i * 0.05) + "px"
+    scalex = width/el.offsetWidth
+    scaley = height/el.offsetHeight
+   
+    if (scalex > scaley) {
+      scale = scaley;
+      // Center the content horizontally
+      style.left = (innerWidth - el.offsetWidth*scale)/2 + "px";
+    } else {
+      scale = scalex;
+      // Center the contetent vertically
+      style.top = (innerHeight - el.offsetHeight*scale)/2 + "px";
     }
 
-    style.display = "block"
-    style.top     = top / 2 + "px"
-    style.left    = left / 2 + "px"
+    style["transform-origin"] = "0 0"
+    style.transform = `scale(${scale})`
+
   }
 
   for (var el, count = 0; el = body.firstChild;) {
